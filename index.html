@@ -6,18 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Train Schedule</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/CSS/style.css">
 </head>
 
 <body>
-    <div>
+    <div class="container-fluid col-md-10 offset-md-1">
         <h1 class="jumbotrn">Check what time you need to be at the Station before the Train leaves you!</h1>
     </div>
-<section>
-    <table></table>
-</section>
-<section>
-    <!-- <form action=""></form> -->
-</section>
+    <section class="container-fluid col-md-10 offset-md-1">
+        <div class="trains">
+        </div>
+    </section>
+    <section class="container-fluid offset-md-1 col-md-11">
+        <form class="col-md-10">
+            <div class="form-group">
+                <label for="Train">Trian</label>
+                <input type="Name" class="form-control" id="train-input" placeholder="Enter Train Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputRole">Destination</label>
+                <input type="name" class="form-control" id="destination-input" placeholder="Enter Destination">
+            </div>
+            <div class="form-group">
+                <label for="time">First Train Time</label>
+                <input type="time" class="form-control" id="time-input" placeholder="First Train Time in Military">
+            </div>
+            <div class="form-group">
+                <label for="minutes">Frequency</label>
+                <input type="minute" class="form-control" id="frequency-input" placeholder="Enter Frequency in Minutes">
+            </div>
+            <button type="submit" id="add-train" class="btn btn-primary">Submit</button>
+            <!-- <button type="remove" id="remove-train" class="btn btn-danger">Remove</button> -->
+        </form>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="/assets/javascript/app.js"></script>
 </body>
 
 </html>
