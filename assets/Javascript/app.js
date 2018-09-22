@@ -15,8 +15,6 @@ $(document).ready(function () {
     var destination = "";
     var frequency = 0;
     var firstTime = "";
-    var minutesAway = "";
-
     var tfrequency = 0;
     var tfirstTime = 0
 
